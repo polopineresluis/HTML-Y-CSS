@@ -1,0 +1,26 @@
+
+.btnEncima{
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+}
+
+
+
+.btnEncima:hover{
+    color: white;
+    background-color: green;
+}
+
+.btnEncima::before{
+    content: 'Pasa por encima';
+    
+}
+
+/*
+    .btnEncima::after{
+        content: '¡Hecho!";
+
+*/
+
+
