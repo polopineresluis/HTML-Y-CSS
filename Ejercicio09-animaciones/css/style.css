@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background-color: beige;
+}
+
+.btn-modern{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(95, 243, 9);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in;
+    
+    
+}
+
+.btn-modern:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 10px  rgb(196, 193, 43);
+    background-color: red;
+    color: yellow;
+}
