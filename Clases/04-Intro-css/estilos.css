@@ -1,0 +1,28 @@
+/*Selector universal
+*#primeraNoticia{
+    color: yellow;
+}*/
+
+h1{
+    color: red;
+}
+
+p{
+    color: blue;
+}
+
+#primeraNoticia{
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #fb5607;
+    color: rgb(8, 250, 20);
+    
+}
+
+
+/* Fondos */
+.fondo{
+    width: 200px;
+    height: 200px;
+    background-color: #fb5607;
+}

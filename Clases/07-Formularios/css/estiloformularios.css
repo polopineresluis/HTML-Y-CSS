@@ -1,0 +1,82 @@
+.input{
+    width: 100%;
+    padding: 5px 10px;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.input[type="password"]{
+    color: red;
+}
+
+.input-moderno{
+    border: none;
+    border-bottom: 1px solid #afaeae;
+    outline: none;
+    padding: 5px;
+    color: #5f5f5f;
+}
+
+.input-moderno::placeholder{
+    color:  yellow;
+}
+
+.input-moderno:focus{
+    border-bottom: 1px solid #f52626;
+}
+
+.input-background{
+    background-color: aquamarine;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px red;
+}
+
+.input-background::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+.input-search{
+    padding: 10px;
+    padding-left: 30px;
+    /*border: none;*/
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 10px;
+    background-image: url('../img/search-icon.png');
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+select{
+    width: 100vw;
+    color: red;
+}
+
+.input-google{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.input-google{
+    background-image: url('../img/google.png');
+    background-repeat: no-repeat;
+    padding: 10px;
+    background-position: 10px;
+}
+
+.input-google::placeholder{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}

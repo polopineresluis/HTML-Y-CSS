@@ -1,0 +1,93 @@
+.container{
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+/*TRANSICIONES*/
+.transiciones{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(238, 238, 178);
+    border: 1px solid rgb(240, 7, 7);
+    margin-right: 40px;
+}
+.padre{
+    width: 80%;
+    height: 60%;
+    background-color: blue;
+    /*transition: transform 1s linear;*/
+} 
+
+.hijo{
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    transition: transform 1s ease-in 2s;
+
+}
+
+.padre:hover .hijo{
+    transform: translateX(100%);
+    background-color: rgb(241, 68, 169);
+}
+
+/*ANIMACIONES */
+.animaciones{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(94, 238, 37);
+    border: 1px solid rgb(194, 197, 6);
+}
+
+.padre-animacion{
+    width: 80%;
+    height: 60%;
+    background-color: rgb(45, 236, 220);
+    /*transition: transform 1s linear;*/
+    /*animation: traslacion 4s ease-in infinite forwards alternate;*/
+} 
+
+.hijo-animacion{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 81, 0);
+    animation: translacion;
+    
+}
+
+@keyframes traslacion {
+    0% {
+        background-color: beige;
+        transform: translateY(0%) translateY(0%);
+    }
+    25%{
+        transform: translateX(100%) translateY(0%);
+    }
+
+    50%{
+        background-color: red;
+        transform: translateX(100%) translateY(100%);
+    }
+    75%{
+        transform: translateX(0%) translateY(100%);
+    }
+
+    100% {
+        background-color: darkgoldenrod;
+        transform: translateX(0%) translateY(0%);
+    }
+}
+
+.padre-animacion:hover{
+/*transform: translateX(100%);
+    background-color: rgb(8, 102, 243);*/
+   /* animation: traslacion 4s ease-in infinite forwards alternate;*/
+
+   animation-play-state: paused;
+
+}

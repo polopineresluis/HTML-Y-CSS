@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Modales con bootstrap</title>
+</head>
+
+<body>
+
+    <div class="container py-4">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-ejemplo">Lanzar
+            Modal
+        </button>
+
+
+        <div class="modal fade" data-bs-backdrop="static" id="modal-ejemplo">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Confirmar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-multiselectable="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-title">Modal body text goes here.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-ejemplo2">Segundo
+            modal</button>
+
+        <!--Tooltips y popovers-->
+        <div class="modal" data-bs-backdrop="static" id="modal-ejemplo2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Probando Tooltips y popovers</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-multiselectable="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="fs-5">Popover in a modal</h2>
+                        <p>Click <a href="#" role="button" class="btn btn-secondary" data-bs-toggle="popover"
+                                title="Probando popover" data-bs-content="OpenBootcampo lo mejor">Probando</a>Sigue
+                            aprendiendo</p>
+                        <hr>
+
+                        <!--Tooltips-->
+                        <h2 class="fs-5">Tooltips en los modales</h2>
+                        <p><a href="#" data-bs-toggle="tooltip" title="IR">This link</a> and <a href="#"
+                                data-bs-toggle="tooltip" title="Tooltip">that link</a> have tooltips on hover.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+
+</html>

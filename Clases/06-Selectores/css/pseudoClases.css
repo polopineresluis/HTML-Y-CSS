@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 500px;
+    height: 150px;
+    background-color: rgb(245, 124, 53);
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.contenedor   p:first-child{
+    color: red;
+}
+.contenedor p{
+    margin-left: 20px;
+    text-align: center;
+}
+
+
+.contenedor:hover{
+    background-color: tomato;
+    cursor: pointer;
+    font-size: 20px;
+}

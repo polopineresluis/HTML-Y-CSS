@@ -1,0 +1,12 @@
+.relleno{
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    border: 1px solid white;
+}
+
+.btn-primary{
+    font-weight: 500;
+    background-color: aquamarine;
+    color: black;
+}
